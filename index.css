@@ -1,0 +1,36 @@
+/* assets/css/styles.css */
+
+.products__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.products__button,
+.products__buy-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.products__button {
+    background-color: #f0f0f0;
+}
+
+.products__buy-button {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.products__button:hover,
+.products__buy-button:hover {
+    background-color: #ddd;
+}
+
+.products__buy-button:hover {
+    background-color: #ff4b4b;
+}

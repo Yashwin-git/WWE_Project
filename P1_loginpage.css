@@ -1,0 +1,78 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('pic.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sign-up form container */
+.sign-up-form {
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.8); /* Changed to rgba for transparency */
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+
+/* Sign-up form heading */
+.sign-up-form h1 {
+    color: rgba(28, 138, 219, 0.8); /* Changed to rgba for transparency */
+    margin-bottom: 30px;
+}
+
+/* Input box styles */
+.form-control {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid rgba(153, 153, 153, 0.8); /* Changed to rgba for transparency */
+    outline: none;
+    background: rgba(255, 255, 255, 0.8); /* Changed to rgba for transparency */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Button styles */
+.btn-primary {
+    color: rgba(255, 255, 255, 0.8); /* Changed to rgba for transparency */
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgba(28, 138, 219, 0.8); /* Changed to rgba for transparency */
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: rgba(28, 138, 219, 0.8); /* Changed to rgba for transparency */
+}
+
+/* Container styles */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5); /* Changed to rgba for higher transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styles */
+.sign-up-form img {
+    width: 170px;
+    margin-top: -50px;
+    opacity: 0.8; /* Added opacity for transparency */
+}

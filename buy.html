@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <!-- Add the Stripe.js library -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- Add your CSS styles -->
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <!-- Payment Form -->
+    <div class="payment-form-container">
+        <form id="payment-form">
+            <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+            </div>
+
+            <div>
+                <label for="address">Address</label>
+                <input id="address" name="address" type="text" required>
+            </div>
+
+            <div>
+                <label for="city">City</label>
+                <input id="city" name="city" type="text" required>
+            </div>
+
+            <div>
+                <label for="postal-code">Postal Code</label>
+                <input id="postal-code" name="postal-code" type="text" required>
+            </div>
+
+            <div>
+                <label for="country">Country</label>
+                <input id="country" name="country" type="text" required>
+            </div>
+
+            <div>
+                <label for="card-element">Credit or debit card</label>
+                <div id="card-element">
+                    <!-- A Stripe Element will be inserted here. -->
+                </div>
+
+                <!-- Used to display form errors. -->
+                <div id="card-errors" role="alert"></div>
+            </div>
+
+            <button id="submit-button">Pay</button>
+        </form>
+        
+        <!-- QR Code Payment Option -->
+        <div id="qr-payment-option">
+            <h2>Or Pay via QR Code</h2>
+            <img src="Qr.jpg" alt="QR Code for Payment">
+            <p>Scan this QR code to complete your payment.</p>
+        </div>
+    </div>
+
+    <!-- Add your JavaScript -->
+    <script src="assets/js/payment.js"></script>
+</body>
+</html>

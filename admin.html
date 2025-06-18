@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Admin Panel - Wrist-Watch Emporium</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class='bx bxs-watch nav__logo-icon'></i>Wrist-Watch<br>&nbsp;&nbsp;&nbsp;Emporium
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="admin.html" class="nav__link active-link">Admin</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== ADMIN PANEL ====================-->
+        <section class="admin section container" id="admin">
+            <h2 class="section__title">Admin Panel</h2>
+
+            <div class="admin__container grid">
+                <!-- Products Management -->
+                <div class="admin__section">
+                    <h3 class="admin__title">Manage Products</h3>
+                    <button class="button admin__button" onclick="window.location.href='addProduct.php'">Add Product</button>
+                    <button class="button admin__button" onclick="window.location.href='editProduct.php'">Edit Product</button>
+                    <button class="button admin__button" onclick="window.location.href='deleteProduct.php'">Delete Product</button>
+                </div>
+
+                <!-- Featured Management -->
+                <div class="admin__section">
+                    <h3 class="admin__title">Manage Featured Items</h3>
+                    <button class="button admin__button" onclick="window.location.href='addFeatured.html'">Add Featured</button>
+                    <button class="button admin__button" onclick="window.location.href='editFeatured.html'">Edit Featured</button>
+                    <button class="button admin__button" onclick="window.location.href='deleteFeatured.html'">Delete Featured</button>
+                </div>
+
+                <!-- Testimonials Management -->
+                <div class="admin__section">
+                    <h3 class="admin__title">Manage Testimonials</h3>
+                    <button class="button admin__button" onclick="window.location.href='addTestimonial.html'">Add Testimonial</button>
+                    <button class="button admin__button" onclick="window.location.href='editTestimonial.html'">Edit Testimonial</button>
+                    <button class="button admin__button" onclick="window.location.href='deleteTestimonial.html'">Delete Testimonial</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

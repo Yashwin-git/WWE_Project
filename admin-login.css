@@ -1,0 +1,86 @@
+/* admin.css */
+
+/* Reset some default browser styles */
+body, h2, form, div, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body to be a full-height flex container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('adminlog.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Style the admin login container */
+.admin-login-container {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Style the heading */
+.admin-login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style form groups to have a margin-bottom */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Style labels to display as block elements */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Style inputs to have full width and padding */
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Change button background on hover */
+button:hover {
+    background: #8c2828;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 400px) {
+    .admin-login-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

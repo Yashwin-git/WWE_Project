@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('paymentpic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.payment-form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for the background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.payment-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.payment-form-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#card-element {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+#card-errors {
+    color: #e74c3c;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#submit-button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+    background-color: #2980b9;
+}
+
+#qr-payment-option {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#qr-payment-option h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#qr-payment-option img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+#qr-payment-option p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555555;
+}
