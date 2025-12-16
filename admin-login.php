@@ -1,25 +1,21 @@
 <?php
 session_start();
 
-// Dummy credentials for example
 $valid_username = 'admin';
 $valid_password = '12345678';
 
-// Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Validate credentials
     if ($username === $valid_username && $password === $valid_password) {
-        // Set session variable
         $_SESSION['loggedin'] = true;
 
-        // Redirect to admin page
+       
         header('Location: admin.html');
         exit();
     } else {
-        // Invalid credentials
+        
         $error_message = 'Invalid username or password';
     }
 }
@@ -55,3 +51,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 </body>
 </html>
+
